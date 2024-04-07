@@ -1,0 +1,39 @@
+a:link,
+a:visited {
+    color: green;
+}
+a:hover {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a:active {
+    color: green;
+}
+a[target]:link,
+a[target]:visited {
+    color: red;
+}
+a[target]:hover {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a[target]:active {
+    color: red;
+}
+#second-div {
+    p:nth-of-type(odd) {
+        color: red;
+    }
+    p:nth-of-type(even) {
+        color: blue;
+    }
+}
+#first-div > p:first-of-type::after,
+#first-div > p:last-of-type::after {
+    content: " - NEW";
+    color: yellow;
+    font-style: italic;
+}
+p:nth-child(8):hover {
+    font-style: italic;
+}
